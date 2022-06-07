@@ -159,15 +159,5 @@ module.exports = {
       power: false
     }
   },
-  devServer: {
-    proxy: {
-      '/api': {
-        target: 'x.x.x.x',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': '/api'
-        }
-      }
-    }
-  }
+  
 }

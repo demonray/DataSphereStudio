@@ -42,6 +42,10 @@
         "getRootPath": "Failed to request Workspace root directory, please refresh to retry!",
         "scriptChanged": "Script already updated, please save and retry!"
       },
+      "topNotice": {
+        "title": "Tips",
+        "content": "Dear Sandbox users: The sand environment is an open environment for testing, deploying all the components of the WeDataSphere open source version. Currently, only demos are allowed to run due to security restrictions, and users cannot add or modify test data. Please take care of the use of the sandbox environment."
+      },
       "error": {
         "fileExists": "Duplicated file!"
       },

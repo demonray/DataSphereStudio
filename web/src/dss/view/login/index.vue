@@ -30,6 +30,7 @@
             v-model="rememberUserNameAndPass"
             class="remember-user-name"
             style="">{{$t('message.common.login.remenber')}}</Checkbox>
+          <router-link to="/register"> <span class="toRegister">{{$t('message.common.login.toRegister')}}</span></router-link>
         </FormItem>
         <FormItem>
           <Button
@@ -167,6 +168,7 @@ export default {
           Object.keys(config.stores).map((key) => {
             db.db[key].clear();
           })
+          storage.remove('workspace_top_notice')
           api
             .fetch(`/user/login`, params)
             .then((rst) => {
@@ -176,11 +178,11 @@ export default {
                 storage.set('saveUserNameAndPass', `${this.loginForm.user}&${this.loginForm.password}`, 'local');
               }
               if (rst) {
-                // 跳转去旧版                
+                // 跳转去旧版
                 if (rst.redirectLinkisUrl) {
                   location.href = rst.redirectLinkisUrl;
                   return
-                }                
+                }
                 // 如果没有代理用户者先存登陆信息，后面的header会重新覆盖
                 GetBaseInfo(false).then((res) => {
                   storage.set('baseInfo', res, 'local');
