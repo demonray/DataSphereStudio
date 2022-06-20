@@ -7,13 +7,6 @@
           type="md-list-box"
           size="14"/>
         <span class="v-toolbar-icon">{{ $t('message.common.log') }}</span>
-      <li
-        @click="openPanel('diagnosis')"
-        v-if="status === 'Running' && application ==='spark'">
-        <Icon
-          type="md-barcode"
-          size="14"/>
-        <span class="v-toolbar-icon">智能<br/>诊断</span>
       </li>
     </ul>
   </div>
