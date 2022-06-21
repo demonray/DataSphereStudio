@@ -44,7 +44,7 @@
       },
       "topNotice": {
         "title": "温馨提示",
-        "content": "沙箱环境属于开放体验环境，已部署WeDataSphere开源新版组件全部内容，但受安全限制仅开放指定DEMO的运行功能，且不能增改数据，敬请爱护使用。"
+        "content": "沙箱环境属于开放体验环境，已部署WeDataSphere开源新版组件全部内容，但受安全限制仅开放指定DEMO的运行功能，且不能增改数据，敬请爱护使用。<br/>Demo环境工作流中的Qualitis、Exchangis节点因版本更新中暂时不可用，预计2022年7月底恢复Qualitis和Exchangis工作流节点的可用。"
       },
       "error": {
         "fileExists": "该文件已经存在！"
